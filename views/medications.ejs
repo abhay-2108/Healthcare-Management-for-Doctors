@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <script src="/js/medications.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/commonCSS.css">
+    <link rel="stylesheet" href="/css/medications.css">
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <script src="/js/loader.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="left">
+            <h3>Patient Dashboard</h3>
+            <ul class="items">
+                <li><a href="/index">Dashboard</a></li>
+                <li><a href="/appointment">Appointment</a></li>
+                <li><a href="/patients">Patients</a></li>
+                <li><a href="/messages">Messages</a></li>
+                <li><a href="/medications" style="background-color: rgba(255, 255, 255, 0.2);">Medications</a></li>
+                <li><a href="/documents">Documents</a></li>
+                <li><a href="/finance">Finance</a></li>
+                <li><a href="/settings">Settings</a></li>
+            </ul>
+            <ul class="logout">
+                <li><a href="/login">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="logo-name">
+                <a href="/index"><img src="/images/hospital-logo.webp" alt=""></a>
+                <h3>John Hospital</h3>
+            </div>
+            <div class="details">
+                <div class="header">
+                  <h3>Medications</h3>
+                  <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search for patients">
+                    <button class="btn" onclick="searchPatients()">Search</button>
+                  </div>
+                </div>
+              
+                <div class="medication" id="medicationList">
+                  <% medications.forEach(patient => { %>
+                    <div class="medication-cards">
+                      <h3><%= patient.patientName %></h3>
+                      <p><strong>Drug:</strong> <%= patient.drugName %></p>
+                      <p><strong>Class:</strong> <%= patient.drugClass %></p>
+                      <p><strong>Uses:</strong> <%= patient.uses %></p>
+                      <p><strong>Dosage:</strong> <%= patient.dosage %></p>
+                      <p><strong>Administration:</strong> <%= patient.administration %></p>
+                      <p><strong>Warnings:</strong> <%= patient.warnings %></p>
+                      <p><strong>Side Effects:</strong> <%= patient.sideEffects %></p>
+                      <p><strong>Storage:</strong> <%= patient.storage %></p>
+                      <p><strong>Manufacturer:</strong> <%= patient.manufacturer %></p>
+                    </div>
+                  <% }) %>
+                </div>
+
+                <!-- Add medication fields -->
+                <h4>Add New Medication</h4>
+                <div class="medication-card" id="addMedicationCard">
+                    <input class="patientName" type="text" placeholder="Patient Name">
+                    <input class="drugName" type="text" placeholder="Drug Name">
+                    <input class="drugClass" type="text" placeholder="Class">
+                    <input class="uses" type="text" placeholder="Uses">
+                    <input class="dosage" type="text" placeholder="Dosage">
+                    <input class="administration" type="text" placeholder="Administration">
+                    <input class="warnings" type="text" placeholder="Warnings">
+                    <input class="sideEffects" type="text" placeholder="Side Effects">
+                    <input class="storage" type="text" placeholder="Storage">
+                    <input class="manufacturer" type="text" placeholder="Manufacturer">
+                    <button class="btn btn-primary" onclick="addMedication(this)">Add Medication</button>
+                  </div>
+              </div>
+              
+        </div>
+    </div>
+</body>
+
+</html>

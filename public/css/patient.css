@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff);
+}
+
+.card {
+    max-width: 1200px;
+    margin: 90px auto;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff);
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    text-align: center;
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+    }
+}
+
+
+
+.Patient-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;
+    margin-top: 100px;
+    width: 70%;
+    border-radius: 8px;
+    margin-left: 250px;
+}
+
+
+
+#patientInputForm {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 60px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px 20px; /* row-gap column-gap */
+}
+
+#patientInputForm input,
+#patientInputForm select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#patientInputForm input:focus,
+#patientInputForm select:focus {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+}
+
+#addPatientBtn {
+    grid-column: span 4;
+    background: linear-gradient(135deg, #2d7cf3, #1a5dcf);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(45, 124, 243, 0.2);
+    transition: all 0.3s ease;
+    min-width: 150px; 
+    text-align: center;
+}
+
+#addPatientBtn:hover {
+    background: linear-gradient(135deg, #1a5dcf, #2d7cf3);
+    box-shadow: 0 6px 15px rgba(45, 124, 243, 0.3);
+    transform: translateY(-2px);
+}
+
+#addPatientBtn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(45, 124, 243, 0.15);
+}

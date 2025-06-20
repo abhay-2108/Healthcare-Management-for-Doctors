@@ -1,0 +1,187 @@
+
+body {
+    background: linear-gradient(135deg, #e6f7ff, #ffffff);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #2d7cf3;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.logo-name img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo-name img:hover {
+    transform: scale(1.1);
+}
+
+
+.logo-name h3 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.logo-name h3:hover {
+    color: #e6f7ff;
+}
+
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.details {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.details h1 {
+    font-size: 32px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+
+.details h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+.doctor-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.doctor-login-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.doctor-login-form input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+
+.doctor-login-form input::placeholder {
+    color: #a5a5a5;
+}
+
+
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+.btn1.log {
+    background: linear-gradient(135deg, #2d7cf3, #1a5dcf);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(45, 124, 243, 0.2);
+    transition: all 0.3s ease;
+    min-width: 150px; 
+    text-align: center;
+}
+
+
+.btn1.log:hover {
+    background: linear-gradient(135deg, #1a5dcf, #2d7cf3);
+    box-shadow: 0 6px 15px rgba(45, 124, 243, 0.3);
+    transform: translateY(-2px);
+}
+.btn1.log:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(45, 124, 243, 0.15);
+}
+
+
+section {
+    font-size: 14px;
+}
+section:hover {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.details p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.details p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+.details p a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

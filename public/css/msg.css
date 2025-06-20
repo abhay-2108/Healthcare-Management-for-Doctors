@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff); 
+}
+
+.patient-msg {
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #2C3E50;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card:hover {
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff); 
+}
+
+.card .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card .info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.card .msg {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.approve {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 60px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 20px;
+
+}
+
+.btn-successs {
+    background-color: #28a745;
+    transition: all 0.3s ease;
+    color: white;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-successs:hover {
+    border: 2px solid #28a745;
+    background: white;
+    color: #28a745;
+}
+
+.btn-dangers {
+    background-color: #dc3545;
+    transition: all 0.3s ease;
+    color: white;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dangers:hover {
+    border: 2px solid #dc3545;
+    background: white;
+    color: #dc3545;
+}
+
+.doctor-msg-container {
+    max-width: 450px;
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff); 
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 140px;
+    height: 50vh;
+}
+
+.doctor-msg-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.doctor-msg-container input,
+.doctor-msg-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.doctor-msg-container input:focus,
+.doctor-msg-container textarea:focus {
+    border-color: #00bcd4;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.2);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.btn-blue {
+    background: #007bff;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    width: 100%;
+}
+
+.btn-blue:hover {
+    background: #0056b3;
+}
+
+
+.btn-primary {
+    background: linear-gradient(135deg, #2d7cf3, #1a5dcf);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(45, 124, 243, 0.2);
+    transition: all 0.3s ease;
+    min-width: 150px; 
+    text-align: center;
+}
+
+.btn-primary:hover { 
+    background: linear-gradient(135deg, #1a5dcf, #2d7cf3);
+    box-shadow: 0 6px 15px rgba(45, 124, 243, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(45, 124, 243, 0.15);
+}

@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f2f7, #ffffff);
+    color: #333; 
+}
+
+.content {
+    width: calc(100% - 280px);
+    margin: 120px 100px 20px 100px; 
+    padding: 30px; 
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa); 
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.content h3 {
+    text-align: center;
+    font-size: 2.5rem; 
+    color: #2c3e50; 
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+    background: linear-gradient(to right, #2980b9, #3498db); 
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.header h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sort {
+    display: flex;
+    gap: 15px;
+    align-items: center; 
+}
+
+#status {
+    background: #2ecc71; 
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    height: 38px;
+    width: 140px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+    transition: background 0.3s ease; 
+}
+
+#status option {
+    background-color: #fff;
+    color: #333;
+}
+
+#status:hover,
+#status:focus {
+    outline: none;
+    background-color: #1ad668; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Appointment Approval Table Form */
+form[action="/appointment/approve"] {
+    background: linear-gradient(to bottom right, #ffffff, #f2f6fa);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+form[action="/appointment/approve"]:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+form[action="/appointment/approve"] .table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-bottom: 25px;
+}
+
+form[action="/appointment/approve"] .table thead th {
+    background-color: #eaf1f8;
+    padding: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    text-transform: uppercase;
+    border: none;
+}
+
+form[action="/appointment/approve"] .table tbody tr {
+    background-color: #fff;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
+}
+
+form[action="/appointment/approve"] .table tbody tr:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+form[action="/appointment/approve"] .table td {
+    padding: 16px;
+    vertical-align: middle;
+    color: #333;
+    border: none;
+}
+
+form[action="/appointment/approve"] .table td img.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+form[action="/appointment/approve"] .table input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+form[action="/appointment/approve"] .table input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+form[action="/appointment/approve"] .table input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+}
+
+/* Approve Button */
+form[action="/appointment/approve"] .text-end .btn-primary {
+    background: linear-gradient(135deg, #2d7cf3, #1a5dcf);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(45, 124, 243, 0.2);
+    transition: all 0.3s ease;
+    min-width: 150px; 
+    text-align: center;
+}
+
+form[action="/appointment/approve"] .text-end .btn-primary:hover {
+    background: linear-gradient(135deg, #1a5dcf, #2d7cf3);
+    box-shadow: 0 6px 15px rgba(45, 124, 243, 0.3);
+    transform: translateY(-2px);
+}
+form[action="/appointment/approve"] .text-end .btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(45, 124, 243, 0.15);
+}
+
+
+form.mb-4 {
+    background: linear-gradient(to bottom right, #ffffff, #f2f6fa);
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    transition: box-shadow 0.3s ease;
+}
+
+form.mb-4:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+form.mb-4 input,
+form.mb-4 select {
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form.mb-4 input:focus,
+form.mb-4 select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+form.mb-4 button.btn-success {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+    border: none;
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form.mb-4 button.btn-success:hover {
+    background: linear-gradient(to right, #219653, #27ae60);
+    transform: translateY(-1px);
+}
+
+.text-end .btn-primary {
+    background: linear-gradient(to right, #2980b9, #3498db);
+    border: none;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.text-end .btn-primary:hover {
+    background: linear-gradient(to right, #2471a3, #2980b9);
+    transform: translateY(-1px);
+}
