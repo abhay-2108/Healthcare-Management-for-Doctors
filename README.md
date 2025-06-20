@@ -6,7 +6,8 @@ The **Healthcare Management System** is a full-featured web application designed
 
 Built using **Node.js**, **Express.js**, **EJS**, and a well-organized MVC folder structure, this project is ideal for scalable deployment in clinical environments or startups.
 
-![image](https://github.com/user-attachments/assets/51010e42-3905-426b-8267-d456eda80736)
+![image](https://github.com/user-attachments/assets/1b09cba8-5b2b-4e20-82fb-7f77fbd9a3e7)
+
 
 ![image](https://github.com/user-attachments/assets/3eedc7aa-ee82-4838-95c9-208e40719345)
 
